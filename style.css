@@ -26,7 +26,6 @@
 body{
     min-height: 100vh;
     font-family: var(--poppins);
-    background-color: black;
 
 }
 
@@ -36,13 +35,11 @@ body{
     min-height: 100vh;
     margin: 100px 0px;    
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    
+    display: grid;
+    place-items: center;
     
 }
+
 
 .--t1{
 
@@ -59,18 +56,16 @@ body{
 
 .--tparag{
 
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     max-inline-size: 34ch;
 }
-
-
 
 .cont__card{
 
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.158) ;
     width: 20rem;
     height: 15rem;
-    margin: 15px;
+    margin: 25px;
     border-radius: 10px;
 
     position: relative;
@@ -133,15 +128,43 @@ p{
     
 }
 
-
-
-
 @media screen and (min-width: 768px) {
 
-    
-    
-    
-    
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "start mid1 end"
+        "start mid2 end";  
+        
+    }
+
+    .cont__card{
+        width: 25rem;
+        margin: 15px;
+        
+    }
+
+    .--card1{
+        grid-area: start;
+        align-self: center;
+    }
+
+    .--card2{
+        grid-area: mid1
+    }
+
+    .--card3{
+        grid-area: mid2;
+    }
+
+    .--card4{
+        grid-area: end;
+        align-self: center;
+    }
+
     .--tparag{
         max-inline-size: 55ch;
     }
