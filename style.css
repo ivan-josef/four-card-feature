@@ -33,7 +33,7 @@ body{
 .container{
 
     min-height: 100vh;
-    margin: 100px 16px 100px 16px;
+    margin: 100px 30px 100px 30px;
     
     display: flex;
     flex-direction: column;
