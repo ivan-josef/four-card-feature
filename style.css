@@ -31,10 +31,9 @@ body{
 
 
 .container{
+    min-height: 100vh;  
+    margin-top: 15px;
 
-    min-height: 100vh;
-    margin: 100px 0px;    
-    
     display: grid;
     place-items: center;
     
@@ -143,7 +142,7 @@ p{
 
     .cont__card{
         width: 25rem;
-        margin: 15px;
+
         
     }
 
